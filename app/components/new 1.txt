@@ -1,0 +1,300 @@
+ create mode 100644 app/Console/Kernel.php
+ create mode 100644 app/Exceptions/Handler.php
+ create mode 100644 app/Http/Controllers/AdminController.php
+ create mode 100644 app/Http/Controllers/Auth/AuthController.php
+ create mode 100644 app/Http/Controllers/Auth/ForgotPasswordController.php
+ create mode 100644 app/Http/Controllers/Auth/LoginController.php
+ create mode 100644 app/Http/Controllers/Auth/RegisterController.php
+ create mode 100644 app/Http/Controllers/Auth/ResetPasswordController.php
+ create mode 100644 app/Http/Controllers/Controller.php
+ create mode 100644 app/Http/Controllers/Home.php
+ create mode 100644 app/Http/Controllers/HomeController.php
+ create mode 100644 app/Http/Controllers/ProductsController.php
+ create mode 100644 app/Http/Kernel.php
+ create mode 100644 app/Http/Middleware/EncryptCookies.php
+ create mode 100644 app/Http/Middleware/RedirectIfAuthenticated.php
+ create mode 100644 app/Http/Middleware/TrimStrings.php
+ create mode 100644 app/Http/Middleware/TrustProxies.php
+ create mode 100644 app/Http/Middleware/VerifyCsrfToken.php
+ create mode 100644 app/ProductModel.php
+ create mode 100644 app/Providers/AppServiceProvider.php
+ create mode 100644 app/Providers/AuthServiceProvider.php
+ create mode 100644 app/Providers/BroadcastServiceProvider.php
+ create mode 100644 app/Providers/EventServiceProvider.php
+ create mode 100644 app/Providers/RouteServiceProvider.php
+ create mode 100644 app/User.php
+ create mode 100644 artisan
+ create mode 100644 bootstrap/app.php
+ create mode 100644 bootstrap/cache/.gitignore
+ create mode 100644 composer.json
+ create mode 100644 composer.lock
+ create mode 100644 config/app.php
+ create mode 100644 config/auth.php
+ create mode 100644 config/broadcasting.php
+ create mode 100644 config/cache.php
+ create mode 100644 config/database.php
+ create mode 100644 config/filesystems.php
+ create mode 100644 config/hashing.php
+ create mode 100644 config/logging.php
+ create mode 100644 config/mail.php
+ create mode 100644 config/queue.php
+ create mode 100644 config/services.php
+ create mode 100644 config/session.php
+ create mode 100644 config/view.php
+ create mode 100644 database/.gitignore
+ create mode 100644 database/factories/UserFactory.php
+ create mode 100644 database/migrations/2018_05_19_122012_create_product_models_table.php
+ create mode 100644 database/migrations/2018_05_19_161614_create_bid_models_table.php
+ create mode 100644 database/migrations/2018_05_20_035635_add_dates_bids.php
+ create mode 100644 database/migrations/2018_05_20_181105_add_product_views_field.php
+ create mode 100644 database/migrations/2018_05_20_181849_add_product_updated_at.php
+ create mode 100644 database/migrations/2018_05_20_215329_roles.php
+ create mode 100644 database/migrations/2018_05_20_221252_is_admin_col.php
+ create mode 100644 database/seeds/DatabaseSeeder.php
+ create mode 100644 morecorp.sql
+ create mode 100644 package.json
+ create mode 100644 phpunit.xml
+ create mode 100644 public/.htaccess
+ create mode 100644 public/css/app.css
+ create mode 100644 public/favicon.ico
+ create mode 100644 public/images/1.jpg
+ create mode 100644 public/images/2.jpg
+ create mode 100644 public/images/3.jpg
+ create mode 100644 public/images/4.jpg
+ create mode 100644 public/images/5.jpg
+ create mode 100644 public/images/6.jpg
+ create mode 100644 public/images/thiyiso.pdf
+ create mode 100644 public/index.php
+ create mode 100644 public/js/app.js
+ create mode 100644 public/mix-manifest.json
+ create mode 100644 public/robots.txt
+ create mode 100644 public/web.config
+ create mode 100644 readme.md
+ create mode 100644 resources/assets/js/app.js
+ create mode 100644 resources/assets/js/bootstrap.js
+ create mode 100644 resources/assets/js/components/ExampleComponent.vue
+ create mode 100644 resources/assets/js/custom.js
+ create mode 100644 resources/assets/js/plugins/dashboard/Chart.min.js
+ create mode 100644 resources/assets/js/plugins/dashboard/feather.min.js
+ create mode 100644 resources/assets/js/plugins/holder.min.js
+ create mode 100644 resources/assets/js/plugins/jquery-slim.min.js
+ create mode 100644 resources/assets/js/plugins/popper.min.js
+ create mode 100644 resources/assets/sass/_variables.scss
+ create mode 100644 resources/assets/sass/album.scss
+ create mode 100644 resources/assets/sass/app.scss
+ create mode 100644 resources/assets/sass/custom.scss
+ create mode 100644 resources/lang/en/auth.php
+ create mode 100644 resources/lang/en/pagination.php
+ create mode 100644 resources/lang/en/passwords.php
+ create mode 100644 resources/lang/en/validation.php
+ create mode 100644 resources/views/admin/dashboard/dashboard.blade.php
+ create mode 100644 resources/views/admin/index.blade.php
+ create mode 100644 resources/views/admin/products/product.blade.php
+ create mode 100644 resources/views/admin/products/summary.blade.php
+ create mode 100644 resources/views/auth/login.blade.php
+ create mode 100644 resources/views/auth/passwords/email.blade.php
+ create mode 100644 resources/views/auth/passwords/reset.blade.php
+ create mode 100644 resources/views/auth/register.blade.php
+ create mode 100644 resources/views/home.blade.php
+ create mode 100644 resources/views/layouts/app.blade.php
+ create mode 100644 resources/views/modal/components/bid_now.blade.php
+ create mode 100644 resources/views/modal/modal_page.blade.php
+ create mode 100644 resources/views/welcome.blade.php
+ create mode 100644 routes/api.php
+ create mode 100644 routes/channels.php
+ create mode 100644 routes/console.php
+ create mode 100644 routes/web.php
+ create mode 100644 server.php
+ create mode 100644 storage/app/.gitignore
+ create mode 100644 storage/app/public/.gitignore
+ create mode 100644 storage/framework/.gitignore
+ create mode 100644 storage/framework/cache/.gitignore
+ create mode 100644 storage/framework/sessions/.gitignore
+ create mode 100644 storage/framework/testing/.gitignore
+ create mode 100644 storage/framework/views/.gitignore
+ create mode 100644 storage/logs/.gitignore
+ create mode 100644 tests/CreatesApplication.php
+ create mode 100644 tests/Feature/ExampleTest.php
+ create mode 100644 tests/TestCase.php
+ create mode 100644 tests/Unit/ExampleTest.php
+ create mode 100644 webpack.mix.js
+
+Ntiyiso@ANDREPC2 /C/Users/Andre/Desktop/test (master)
+$ git remote add origin git@github.com:Ntiyiso-Rikhotso/morecorp.git
+
+Ntiyiso@ANDREPC2 /C/Users/Andre/Desktop/test (master)
+$ git push -u -f origin master
+The authenticity of host 'github.com (192.30.253.112)' can't be established.
+RSA key fingerprint is 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Ntiyiso@ANDREPC2 /C/Users/Andre/Desktop/test (master)
+$ git push -u -f origin master
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Ntiyiso@ANDREPC2 /C/Users/Andre/Desktop/test (master)
+$ git remote add origin https://github.com/Ntiyiso-Rikhotso/morecorp.git
+fatal: remote origin already exists.
+
+Ntiyiso@ANDREPC2 /C/Users/Andre/Desktop/test (master)
+$ git remote add origin https://github.com/Ntiyiso-Rikhotso/morecorp.git
+fatal: remote origin already exists.
+
+Ntiyiso@ANDREPC2 /C/Users/Andre/Desktop/test (master)
+$ git remote add origin git@github.com:Ntiyiso-Rikhotso/morecorp.git
+fatal: remote origin already exists.
+
+Ntiyiso@ANDREPC2 /C/Users/Andre/Desktop/test (master)
+$ git remote add origin https://github.com/Ntiyiso-Rikhotso/morecorp.git
+fatal: remote origin already exists.
+
+Ntiyiso@ANDREPC2 /C/Users/Andre/Desktop/test (master)
+$ git push -u -f origin master
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Ntiyiso@ANDREPC2 /C/Users/Andre/Desktop/test (master)
+$ git login
+git: 'login' is not a git command. See 'git --help'.
+
+Did you mean this?
+        column
+
+Ntiyiso@ANDREPC2 /C/Users/Andre/Desktop/test (master)
+$ git config credential.helper store
+
+Ntiyiso@ANDREPC2 /C/Users/Andre/Desktop/test (master)
+$ git push https://github.com/morecorp.git
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: unable to access 'https://github.com/morecorp.git/': error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version
+
+Ntiyiso@ANDREPC2 /C/Users/Andre/Desktop/test (master)
+$ git remote set-url origin git@github.com:Ntiyiso-Rikhotso/morecorp.git
+
+Ntiyiso@ANDREPC2 /C/Users/Andre/Desktop/test (master)
+$ git remote -v
+origin  git@github.com:Ntiyiso-Rikhotso/morecorp.git (fetch)
+origin  git@github.com:Ntiyiso-Rikhotso/morecorp.git (push)
+
+Ntiyiso@ANDREPC2 /C/Users/Andre/Desktop/test (master)
+$ git push https://github.com/morecorp.git
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: unable to access 'https://github.com/morecorp.git/': error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version
+
+Ntiyiso@ANDREPC2 /C/Users/Andre/Desktop/test (master)
+$ git push https://github.com/morecorp
+warning: push.default is unset; its implicit value is changing in
+Git 2.0 from 'matching' to 'simple'. To squelch this message
+and maintain the current behavior after the default changes, use:
+
+  git config --global push.default matching
+
+To squelch this message and adopt the new behavior now, use:
+
+  git config --global push.default simple
+
+When push.default is set to 'matching', git will push local branches
+to the remote branches that already exist with the same name.
+
+In Git 2.0, Git will default to the more conservative 'simple'
+behavior, which only pushes the current branch to the corresponding
+remote branch that 'git pull' uses to update the current branch.
+
+See 'git help config' and search for 'push.default' for further information.
+(the 'simple' mode was introduced in Git 1.7.11. Use the similar mode
+'current' instead of 'simple' if you sometimes use older versions of Git)
+
+fatal: unable to access 'https://github.com/morecorp/': error:1407742E:SSL routines:SSL23_GET_SERVER_HELLO:tlsv1 alert protocol version
+
+Ntiyiso@ANDREPC2 /C/Users/Andre/Desktop/test (master)
+$ git push -u -f origin master
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Ntiyiso@ANDREPC2 /C/Users/Andre/Desktop/test (master)
+$ git config user.email "truminnd@gmail.com"
+
+Ntiyiso@ANDREPC2 /C/Users/Andre/Desktop/test (master)
+$ git config user.password "9310@Minni"
+
+Ntiyiso@ANDREPC2 /C/Users/Andre/Desktop/test (master)
+$ git push -u -f origin master
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Ntiyiso@ANDREPC2 /C/Users/Andre/Desktop/test (master)
+$ git remote add origin git@github.com:Ntiyiso-Rikhotso/morecorp.git
+fatal: remote origin already exists.
+
+Ntiyiso@ANDREPC2 /C/Users/Andre/Desktop/test (master)
+$ git push -u origin master
+Permission denied (publickey).
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+
+Ntiyiso@ANDREPC2 /C/Users/Andre/Desktop/test (master)
+$
+
+Ntiyiso@ANDREPC2 /C/Users/Andre/Desktop/test (master)
+$

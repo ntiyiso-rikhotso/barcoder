@@ -1,0 +1,19 @@
+{
+ "expo": {
+    "name": "Barcoder",
+    "slug": "Barcoder",
+    "sdkVersion": "25.0.0",
+	"icon" : "./app/images/icon.png",
+    "privacy": "public",
+    "ios": {
+      "bundleIdentifier": "com.itnt.barcoder"
+    },
+    "android": {
+      "package": "com.itnt.barcoder"
+    },
+	"assetBundlePatterns": [
+	  "./app/images/*",
+	  "./app/images/vehicles/*"
+	]
+  }
+}
